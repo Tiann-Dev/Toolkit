@@ -34,7 +34,8 @@ def cookies():
     try:
         ses=requests.Session()
         n,cok,cookie=0,[],[]
-        url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
+        #url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
+        url = parser(ses.get("https://mbasic.facebook.com/photo.php?fbid=549345863862686&id=100063618310179&set=a.309477517849523&eav=AfYWXx6P3rikaNUKhUa1aQI9HyITaH3Xto98Ht2qYSzRPDwLVjTXOzNUb9cgdlmzEMo&paipv=0&p=0&av=100009469942335&refid=13").text,"html.parser")
         for z in url("span"):
             cok.append(z.text)
         for x in "".join(cok).split("datr"):
@@ -49,6 +50,11 @@ def cookies():
                         print()
                         cookie.append(cok)
                         print(f"{n}.{h} {cok}{p}\n")
+    except:pass
+
+def ua_kamu():
+    try:
+        os.system("xdg-open http://whatsmyuseragent.org/");exit()
     except:pass
 
 print(" 1. Cookies Facebook")
@@ -78,6 +84,4 @@ if ask == ('6'):
 if ask == ('7'):
     print(f'IP Kamu :{h} {ip}')
 if ask == ('8'):
-    #print(f'User Agent : {ugent}')
-    print(f'Sorry, Sedang Maintance')
-   
+    ua_kamu()
