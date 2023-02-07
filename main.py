@@ -29,8 +29,8 @@ logo()
 rr = random.randint
 rc = random.choice
 ip = requests.get("https://api.ipify.org").text
-user = open('user-agents_oppo-browser.txt','r').read().splitlines()
-ua = rc(user)
+#user = open('user-agents_oppo-browser.txt','r').read().splitlines()
+#ua = rc(user)
 proxy = open('proxy.txt','r').read().splitlines()
 prox = rc(proxy)
 ugent = requests.get("https://www.yayanxd.my.id/server/ua/").text
@@ -49,21 +49,7 @@ print()
 ask = input(f'{m}Pi{k}li{h}h -> {p}')
 
 if ask in ('1'):
-    print()
-if ask == ('2'):
-    print(f"Hasil Dari {a} x {b} = {h}{int(a)*int(b)}")   
-if ask == ('3'):
-    print(f"Hasil Dari {a} : {b} = {h}{int(a)/int(b)}") 
-if ask == ('4'):
-    print(f"Hasil Dari {a} - {b} = {h}{int(a)-int(b)}")
-if ask == ('5'): 
-    print(f'User Agent :{h} ', ua)
-if ask == ('6'): 
-    print(f'Proxy :{h} ', prox)
-if ask == ('7'):
-    print(f'IP Kamu :{h} {ip}')
-if ask == ('8'):
-        ses=requests.Session()
+    ses=requests.Session()
 n,cok,cookie=0,[],[]
 url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
 for z in url("span"):
@@ -79,4 +65,19 @@ for x in "".join(cok).split("datr"):
 			n+=1
 			cookie.append(cok)
 			print(f"{n}. {cok}\n")
+if ask == ('2'):
+    print(f"Hasil Dari {a} x {b} = {h}{int(a)*int(b)}")   
+if ask == ('3'):
+    print(f"Hasil Dari {a} : {b} = {h}{int(a)/int(b)}") 
+if ask == ('4'):
+    print(f"Hasil Dari {a} - {b} = {h}{int(a)-int(b)}")
+if ask == ('5'): 
+    print(f'User Agent :{h} ', ua)
+if ask == ('6'): 
+    print(f'Proxy :{h} ', prox)
+if ask == ('7'):
+    print(f'IP Kamu :{h} {ip}')
+if ask == ('8'):
+    #print(f'User Agent : {ugent}')
+    print(f'Sorry, Sedang Maintance')
    
