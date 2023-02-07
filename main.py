@@ -13,6 +13,8 @@ u = '\033[95m' # UNGU
 bru = '\33[1;96m' # BIRU -
 asu = random.choice([k,h,u,biru])
 
+os.system("git pull")
+
 def logo():
     print(f"""{asu}
  _____      _       _   _____            _ _    _ _   
