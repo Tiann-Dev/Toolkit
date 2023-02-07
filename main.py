@@ -31,9 +31,8 @@ rc = random.choice
 ip = requests.get("https://api.ipify.org").text
 #user = open('user-agents_oppo-browser.txt','r').read().splitlines()
 #ua = rc(user)
-proxy = open('proxy.txt','r').read().splitlines()
-prox = rc(proxy)
-ugent = requests.get("https://www.yayanxd.my.id/server/ua/").text
+#proxy = open('proxy.txt','r').read().splitlines()
+#prox = rc(proxy)
 
 print("1. Free Cookies Facebook")
 print("2. Kalikan")
