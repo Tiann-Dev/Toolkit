@@ -1,4 +1,4 @@
-import random,os,sys,requests,re,json,bs4
+import random,os,sys,requests,re,json,bs4,time
 from bs4 import BeautifulSoup as parser
 
 def exit():
@@ -84,4 +84,5 @@ if ask == ('6'):
 if ask == ('7'):
     print(f'IP Kamu :{h} {ip}')
 if ask == ('8'):
+    print(f'  Anda Akan Di Arahkan Ke Browser');time.sleep(0.2)
     ua_kamu()
