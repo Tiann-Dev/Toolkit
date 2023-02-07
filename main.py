@@ -21,7 +21,7 @@ def logo():
  / / | (_) | | (_) | |  / / | (_) | (_) | |   <| | |_ 
  \/   \___/|_|\___/|_|  \/   \___/ \___/|_|_|\_\_|\__|
 
- {p}Created By ࿐ {bru} Christian S.
+ {p}Created By ࿐ {bru} Christian S. {p}ಮ
                                                       
     {p}""")
  
@@ -29,41 +29,42 @@ logo()
 rr = random.randint
 rc = random.choice
 ip = requests.get("https://api.ipify.org").text
-#user = open('user-agents_oppo-browser.txt','r').read().splitlines()
-#ua = rc(user)
-#proxy = open('proxy.txt','r').read().splitlines()
-#prox = rc(proxy)
 
-print("1. Free Cookies Facebook")
-print("2. Kalikan")
-print("3. Bagikan")
-print("4. Jumlahkan")
-print()
-print(f'{u}└── Other Tools {p}')
+def cookies():
+    try:
+        ses=requests.Session()
+        n,cok,cookie=0,[],[]
+        url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
+        for z in url("span"):
+            cok.append(z.text)
+        for x in "".join(cok).split("datr"):
+                cok = f"datr{x}"
+                if cok in cookie:
+                    pass
+                else:
+                    if "Beranda" in cok:
+                        pass
+                    else:
+                        n+=1
+                        print()
+                        cookie.append(cok)
+                        print(f"{n}.{h} {cok}{p}\n")
+    except:pass
+
+print(" 1. Cookies Facebook")
+print(" 2. Kalkulator")
+print(" 3. Cek Aplikasi Terkait")
+print(" 4. Convert Cookies Ke Token EAAB")
+print(f'{u} └── Other Tools{p} ☂')
 print("    5. Random User Agent ")
-print("    6. Random Proxy")
+print("    6. Chekpoint Detector")
 print('    7. Cek IP Address')
 print('    8. Cek User Agent Kamu')
 print()
-ask = input(f'{m}Pi{k}li{h}h -> {p}')
+ask = input(f' {m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}')
 
-if ask in ('1'):
-    ses=requests.Session()
-n,cok,cookie=0,[],[]
-url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
-for z in url("span"):
-	cok.append(z.text)
-for x in "".join(cok).split("datr"):
-	cok = f"datr{x}"
-	if cok in cookie:
-		pass
-	else:
-		if "Beranda" in cok:
-			pass
-		else:
-			n+=1
-			cookie.append(cok)
-			print(f"{n}. {cok}\n")
+if ask in ('1'): 
+    cookies()
 if ask == ('2'):
     print(f"Hasil Dari {a} x {b} = {h}{int(a)*int(b)}")   
 if ask == ('3'):
