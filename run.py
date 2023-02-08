@@ -40,7 +40,7 @@ class Bokep:
 		print(f"{p}3. Bokep english ({h}use vpn{p})")
 		print(f"{p}4. Download apk {h}xnxx{p}")
 		print(f"{p}5. View link bokep terbaru")
-		__nanya__ = input(f"\n{p}> Input : ")
+		__nanya__ = input(f"\n{p}> {m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}")
 		if __nanya__ == "1" or __nanya__ == "01":self.indo()
 		elif __nanya__ == "2" or __nanya__ == "02":self.japan()
 		elif __nanya__ == "3" or __nanya__ == "03":self.english()
@@ -56,7 +56,7 @@ class Bokep:
 			print(f"{p}3. Bokep remaja ({h}bisa download{p})")
 			print(f"{p}4. Bokep hijab ({h}bisa download{p})")
 			print(f"{p}5. Bokep colmek ({h}hanya menonton{p})")
-			ask = input(f"\n{p}> Input : ")
+			ask = input(f"\n{p}> {m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p} ")
 			if ask == "1":
 				self.__jalan__(f"\n{p}!. Sedang masuk ke website ...")
 				os.system("xdg-open https://bokepindo13.com/?s=smp");exit()
@@ -80,7 +80,7 @@ class Bokep:
 			print(f"{p}1. Bokep japan school ({h}bisa download{p})")
 			print(f"{p}2. Bokep japan family ({h}bisa download{p})")
 			print(f"{p}3. Bokep japan random video ({h}bisa download{p})")
-			ask = input(f"\n{p}> Input : ")
+			ask = input(f"\n{p}> {m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}")
 			if ask == "1":
 				self.__jalan__(f"\n{p}!. Sedang masuk ke website ...")
 				os.system("xdg-open https://www.xvideos.com/?k=Japanese+school+");exit()
@@ -104,7 +104,7 @@ class Bokep:
 			print(f"{p}4. Bokep public random ({h}bisa download{p})")
 			print(f"{p}5. Bokep step mom ({h}bisa download{p})")
 			print(f"{p}6. Bokep step sister ({h}bisa download{p})")
-			ask = input(f"\n{p}> Input : ")
+			ask = input(f"\n{p}> {m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}")
 			if ask == "1":
 				self.__jalan__(f"\n{p}!. Sedang masuk ke website ...")
 				os.system("xdg-open https://www.xnxx.com/search/English+student");exit()
