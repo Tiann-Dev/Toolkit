@@ -43,19 +43,19 @@ class Dump_regex:
 		apa = input(f"{logo()} \n\n 1. Dump Publik\n  2. Dump Masal\n   3. Keluar\n\n{m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}")
 		print("-"*30)
 		if apa in ["1","01"]:
-			akun = input("꧁  ⁣Target : ")
-			self.file = input("꧁⁣  Masukan Nama File Anda \n꧁⁣  Nama : ")
+			akun = input(" ꧁  ⁣Target : ")
+			self.file = input(" ꧁⁣  Masukan Nama File Anda \n ꧁⁣  Nama : ")
 			if "https" in str(akun): self.user = akun.split("/")[3]
 			else: self.user = akun
 			self.cek_target()
 			self.info_file()
 			self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")	
 		elif apa in ["2","02"]:
-			xx = int(input("꧁⁣  Berapa Id? : "))
-			self.file = input("꧁ ⁣ Masukan Nama File Anda \n꧁ ⁣ Nama : ")
+			xx = int(input(" ꧁⁣  Berapa Id? : "))
+			self.file = input(" ꧁ ⁣ Masukan Nama File Anda \n ꧁ ⁣ Nama : ")
 			self.info_file()
 			for x in range(xx):
-				akun = input("꧁ ⁣ Target : ")
+				akun = input(" ꧁ ⁣ Target : ")
 				if "https" in str(akun): self.user = akun.split("/")[3]
 				else: self.user = akun
 				self.cek_target()
