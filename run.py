@@ -15,7 +15,8 @@ def logo():
 
 def exit():
     os.system("exit")
-
+def clear():
+	os.system("clear")
 def update():
     os.system("git pull")
 
@@ -43,19 +44,19 @@ class Dump_regex:
 		apa = input(f"{logo()} \n\n 1. Dump Publik\n  2. Dump Masal\n   3. Keluar\n\n{m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}")
 		print("-"*30)
 		if apa in ["1","01"]:
-			akun = input(" ꧁  ⁣Target : ")
-			self.file = input(" ꧁⁣  Masukan Nama File Anda \n ꧁⁣  Nama : ")
+			akun = input("꧁  ⁣Target : ")
+			self.file = input("꧁⁣  Masukan Nama File Anda \n꧁⁣  Nama : ")
 			if "https" in str(akun): self.user = akun.split("/")[3]
 			else: self.user = akun
 			self.cek_target()
 			self.info_file()
 			self.dump_publik(f"https://mbasic.facebook.com/{self.user}/friends")	
 		elif apa in ["2","02"]:
-			xx = int(input(" ꧁⁣  Berapa Id? : "))
-			self.file = input(" ꧁ ⁣ Masukan Nama File Anda \n ꧁ ⁣ Nama : ")
+			xx = int(input("꧁⁣  Berapa Id? : "))
+			self.file = input("꧁ ⁣ Masukan Nama File Anda \n꧁ ⁣ Nama : ")
 			self.info_file()
 			for x in range(xx):
-				akun = input(" ꧁ ⁣ Target : ")
+				akun = input("꧁ ⁣ Target : ")
 				if "https" in str(akun): self.user = akun.split("/")[3]
 				else: self.user = akun
 				self.cek_target()
@@ -142,6 +143,7 @@ def ua_kamu():
     except:pass
 
 update()
+clear()
 
 logo()
 print(" 1. Cookies Facebook")
@@ -164,15 +166,20 @@ if ask in ('1'):
 if ask == ('2'):
     Dump_regex().menu()  
 if ask == ('3'):
-    print(f"Hasil Dari {a} : {b} = {h}{int(a)/int(b)}") 
+    print(f'Sorry, Sedang Maintance!')
 if ask == ('4'):
-    print(f"Hasil Dari {a} - {b} = {h}{int(a)-int(b)}")
+    print(f'Sorry, Sedang Maintance!')
 if ask == ('5'): 
-    print(f'User Agent :{h} ', ua)
+    print(f'Sorry, Sedang Maintance!')
 if ask == ('6'): 
-    print(f'Proxy :{h} ', prox)
+    print(f'Sorry, Sedang Maintance!')
 if ask == ('7'):
     print(f'IP Kamu :{h} {ip}')
 if ask == ('8'):
     print(f'  Anda Akan Di Arahkan Ke Browser');time.sleep(0.2)
     ua_kamu()
+if ask == ('9'): 
+    print(f'Sorry, Sedang Maintance!')
+if ask == ('10'): 
+    print(f'\nSorry, Sedang Maintance!\n')
+exit()
