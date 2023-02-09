@@ -46,8 +46,8 @@ class convert():
             except:pass
 
 def input_cookie():
-    print('%s\n Apabila A2F On, Buka Link Dibawah, Lalu Masukkan Kode A2F'%(p))
-    print('%shttps://business.facebook.com/business_locations\n'%(p))
+    print('%s\n _ Apabila A2F On, Buka Link Dibawah, Lalu Masukkan Kode A2F'%(p))
+    print('%s https://business.facebook.com/business_locations\n'%(p))
     cookie = input('%sMasukkan Cookie : %s'%(p,h))
     Token1 = generate_token_eaab(cookie); Perm1 = req_info_token(cookie,Token1) # Power Editor Token
     Token2 = generate_token_eaag(cookie); Perm2 = req_info_token(cookie,Token2) # Business Manager Token
@@ -57,14 +57,14 @@ def input_cookie():
     Token6 = generate_token_eaae(cookie); Perm6 = req_info_token(cookie,Token6) # Account Quality Token
     Token7 = generate_token_eaaf(cookie); Perm7 = req_info_token(cookie,Token7) # Lift Study Creation Token
     Token8 = generate_token_eabb(cookie); Perm8 = req_info_token(cookie,Token8) # Hub Materi Iklan Token
-    print('\n%s[ Power Editor Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s'        %(p,h,Token1,p,k,Perm1,p))
-    print('\n%s[ Business Manager Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s'    %(p,h,Token2,p,k,Perm2,p))
-    print('\n%s[ Ads Management Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s'      %(p,h,Token3,p,k,Perm3,p))
-    print('\n%s[ Ads Event Manager Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s'   %(p,h,Token4,p,k,Perm4,p))
-    print('\n%s[ Ads Block List Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s'      %(p,h,Token5,p,k,Perm5,p))
-    print('\n%s[ Account Quality Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s'     %(p,h,Token6,p,k,Perm6,p))
-    print('\n%s[ Lift Study Creation Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s' %(p,h,Token7,p,k,Perm7,p))
-    print('\n%s[ Hub Materi Iklan Token ]\n%s%s\n%s[ Permissions ]\n%s%s%s'    %(p,h,Token8,p,k,Perm8,p))
+    print('\n%s [ Power Editor Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s'        %(p,h,Token1,p,k,Perm1,p))
+    print('\n%s [ Business Manager Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s'    %(p,h,Token2,p,k,Perm2,p))
+    print('\n%s [ Ads Management Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s'      %(p,h,Token3,p,k,Perm3,p))
+    print('\n%s [ Ads Event Manager Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s'   %(p,h,Token4,p,k,Perm4,p))
+    print('\n%s [ Ads Block List Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s'      %(p,h,Token5,p,k,Perm5,p))
+    print('\n%s [ Account Quality Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s'     %(p,h,Token6,p,k,Perm6,p))
+    print('\n%s [ Lift Study Creation Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s' %(p,h,Token7,p,k,Perm7,p))
+    print('\n%s [ Hub Materi Iklan Token ]\n %s%s\n%s [ Permissions ]\n %s%s%s'    %(p,h,Token8,p,k,Perm8,p))
 
 def req_info_token(cooki,token):
     try:
@@ -485,7 +485,8 @@ print(f'     7. Spam SMS   {m}Off {p}')
 print(f'     8. Cek User Agent & IP Kamu')
 print(f'{u}     └── Special Tools{p} ☂')
 print(f"         9. Multi Brute Force   {bru}Coming Soon!{p}")
-print(f"         10. Insta Hack   {bru}Coming Soon!")
+print(f"         10. Insta Hack   {bru}Coming Soon!{p}\n")
+print(f' 00. Kontak Admin')
 print()
 ask = input(f' {m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}')
 
@@ -514,3 +515,5 @@ exit()
 if ask == ('10'): 
     print(f'\nSorry, Sedang Maintance!\n')
 exit()
+if ask == ('00'): 
+    print(f'\n Admin Sedang Tidur!\n')
