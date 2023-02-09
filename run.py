@@ -1,6 +1,5 @@
 import random,os,sys,requests,re,json,bs4,time
 from bs4 import BeautifulSoup as parser
-import fb as e
 
 def logo():
     print(f"""{asu}
@@ -172,9 +171,9 @@ class Bokep:
 		except:pass
 
 def cek_apk():
-	clear();time.sleep(1)
-	logo()
+	time.sleep(1)
 	try:
+		print('\nMasukan Cookie FB Yang Mau Di Cek Apk Nya!\n');time.sleep(3)
 		kukiz = input(" Masukan Cookie : ")
 		ses = requests.Session()
 		url = ses.get("https://free.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":kukiz})
@@ -186,7 +185,7 @@ def cek_apk():
 		else:
 			for kontol in range(len(game)):
 				print("\n- Mengechek Aplikasi Aktif")
-				print("%s %s "%(kontol+1, game[kontol].replace(" Di akses pada ", " Di tambahkan pada")));time.sleep(1)
+				print("%s %s "%(kontol+1,game[kontol].replace  (" Di akses pada ", " Di tambahkan pada")));time.sleep(1)
 			link = ses.get("https://free.facebook.com/settings/apps/tabbed/?tab=inactive", cookies={"cookie":kukiz})
 			post = parser(link.text,"html.parser")
 			cari = post.find("form",{"method":"post"})
@@ -307,7 +306,6 @@ asu = random.choice([k,h,u,biru])
 
 rr = random.randint
 rc = random.choice
-ip = requests.get("https://api.ipify.org").text
 
 def cookies():
     try:
@@ -337,24 +335,24 @@ def ua_kamu():
     except:pass
 
 update();clear();logo()
-
-print(" 1. Cookies Facebook")
-print(" 2. Dump Id")
-print(" 3. Cek Aplikasi Terkait")
-print(" 4. Convert Cookies Ke Token EAAB")
+print(f' 1. Cookies Facebook   {k}Maintance{p}')
+print(f' 2. Dump Id')
+print(f" 3. Cek Aplikasi Terkait")
+print(f" 4. Convert Cookies Ke Token EAAB   {m}Off")
 print(f'{u} └── Other Tools{p} ☂')
-print("     5. Bokep Link :v ")
-print("     6. Chekpoint Detector")
-print('     7. Cek IP Address')
-print('     8. Cek User Agent Kamu')
+print(f"     5. Bokep Link :v ")
+print(f"     6. Chekpoint Detector   {m}Off {p}")
+print(f'     7. Spam SMS   {m}Off {p}')
+print(f'     8. Cek User Agent & IP Kamu')
 print(f'{u}     └── Special Tools{p} ☂')
-print("         9. Random User Agent ")
-print("         10. Chekpoint Detector")
+print(f"         9. Multi Brute Force   {bru}Cooming Soon!{p}")
+print(f"         10. Insta Hack   {bru}Cooming Soon!")
 print()
 ask = input(f' {m}Pi{k}li{h}h {m}︻{k}芫{h}═── {p}')
 
+
 if ask in ('1'): 
-    cookies()
+    print("\n Tunggu Sebentar!");time.sleep(2);cookies()
 if ask == ('2'):
 	print(f'\n  Tunggu Sebentar ۝ঔৣ✞ ');time.sleep(2)
 	Dump_regex().menu()
@@ -367,12 +365,13 @@ if ask == ('5'):
 if ask == ('6'): 
     print(f'Sorry, Sedang Maintance!')
 if ask == ('7'):
-    print(f'IP Kamu :{h} {ip}')
+    print(f"Sorry, Sedang Maintance!");exit()
 if ask == ('8'):
     print(f'  Anda Akan Di Arahkan Ke Browser');time.sleep(2)
     ua_kamu()
 if ask == ('9'): 
-    e()
+     print(f'\nSorry, Sedang Maintance!\n')
+exit()
 if ask == ('10'): 
     print(f'\nSorry, Sedang Maintance!\n')
 exit()
