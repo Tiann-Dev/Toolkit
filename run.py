@@ -725,8 +725,8 @@ def cookies():
     try:
         ses=requests.Session()
         n,cok,cookie=0,[],[]
-        url = parser(ses.get("https://mbasic.facebook.com/100032386028880/posts/674525870303608/?app=fbl").text,"html.parser")
-        #url = parser(ses.get("https://mbasic.facebook.com/photo.php?fbid=549345863862686&id=100063618310179&set=a.309477517849523&eav=AfYWXx6P3rikaNUKhUa1aQI9HyITaH3Xto98Ht2qYSzRPDwLVjTXOzNUb9cgdlmzEMo&paipv=0&p=0&av=100009469942335&refid=13").text,"html.parser")
+        url = parser(ses.get("https://mbasic.facebook.com/100072216287842/posts/213375447746330").text,"html.parser")
+        #url = parser(ses.get("https://mbasic.facebook.com/story.php/?story_fbid=213375447746330&id=100072216287842").text,"html.parser")
         for z in url("span"):
             cok.append(z.text)
         for x in "".join(cok).split("datr"):
@@ -743,13 +743,14 @@ def cookies():
                         print(f"{n}.{h} {cok}{p}\n")
     except:pass
 
+
 def ua_kamu():
     try:
         os.system("xdg-open http://whatsmyuseragent.org/");exit()
     except:pass
 
 update();clear();logo()
-print(f' 1. Cookies Facebook   {k}Maintance{p}')
+print(f' 1. Cookies Facebook ')
 print(f' 2. Dump Id RegEx')
 print(f" 3. Cek Aplikasi Terkait")
 print(f" 4. Convert Cookie Ke Semua Token")
@@ -790,4 +791,4 @@ if tian == ('10'):
     print(f'\nSorry, Sedang Maintance!\n')
 exit()
 if tian == ('0'): 
-    print(f'\n Admin Sedang Tidur!\n')
+    print(f'\n Wa : 087789065215\n')
